@@ -1,0 +1,14 @@
+.heading{
+    color: rgb(159, 32, 32);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.subhead {
+    color: rgb(197, 82, 33);
+    margin: 10px;
+    border-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: rgb(252, 242, 161);
+}
