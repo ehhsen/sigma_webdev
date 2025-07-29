@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* div{
+            background-color: yellowgreen;
+        } */
+        .text_color{
+            color: rgb(0, 0, 0);
+        }
+        #back{
+            color: orange;
+        }
+        /* div > p{
+            background-color: black;
+        } */
+        /* descendent selector */
+        div p{
+            background-color: green;
+
+        }
+        /* universal selectors */
+        * {
+            margin : 0;
+            padding : 0; 
+        }
+        /* pseudo selector/ */
+        a:visited{
+            color: red;
+        }
+        a:active{
+            color: red;
+        }
+        a:hover{
+            background-color: burlywood;
+        }
+        p:first-child{
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <!-- element selectors     -->
+    <div>
+        this is a text from  div
+    </div>
+    <!-- class selector -->
+    <div class="text_color">
+        this text will be colored
+    <section>
+        
+            <p id = "back">this is a new para</p>
+            
+    </section> 
+    </div>
+    <div>
+        <a href="https://google.com">Goto Google</a>
+    </div>
+    <div>
+        <p>first child</p>
+        <p>second child</p>
+    </div>
+
+</body>
+</html>
