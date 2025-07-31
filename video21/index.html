@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        p{
+            color: aqua;
+        }
+        .red {
+            color: red;
+        }
+
+        p.blue {
+            color: blue;
+        }
+
+        .green {
+             color: green /*!important*/; 
+
+        }
+        [bg=a]{
+            background-color: yellow;
+        }
+
+        /* p.red.green.blue {
+            color: purple; This will override the individual colors
+        } */
+    </style>
+</head>
+
+<body>
+    <p class = "red green blue" bg="a">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dolore, ipsum dolor
+        suscipit, provident nesciunt necessitatibus inventore delectus tenetur voluptates nemo? Necessitatibus, soluta.
+    </p>
+
+</body>
+
+</html>
