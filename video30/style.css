@@ -1,0 +1,35 @@
+        :root{
+            --color: rgb(65, 65, 184);
+            --seccolor: rgb(96, 96, 134);
+            --padleft: 10px;
+            --defopacity: .8;
+
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--seccolor);
+            opacity: var(--defopacity);
+            
+            
+        }
+        ul li{
+            list-style: none;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            padding-left: var(--padleft);
+            padding-right: 10px;
+        }
+        ul li:first-child{
+            --color : orange;
+            background-color: var(--color, green);
+            border: 2px solid black;
+        }
+        ul{
+            display: flex;
+        }
