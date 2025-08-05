@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* .box:first-child{
+            color: red;
+        }
+        .box::first-letter{
+            color: green;
+        } */
+/* .box::first-line{
+            background-color: yellow;
+        } */
+/* .boxes * {
+            border: 2px solid blueviolet;
+            color: green;
+        } */
+
+/* [data-color= "primary"]{  /*attribute selector*/
+/* margin-top: 20px;
+            padding-top: 5px; 
+         } */
+/* grouping of selectors */
+/* p,
+        a,
+        .box,
+        [data-color="primary"] {
+            margin-top: 20px;
+            padding-top: 5px;
+            background-color: greenyellow;
+        } */
+/* .box:nth-child(odd){
+            background-color: aquamarine;
+         } */
+.box:nth-last-child(1) {
+    background-color: violet;
+}
+
+.boxes::before {
+    content: "this content is added dynamically";
+    color: red;
+}
+
+.boxes::after {
+    content: "this content is also added dynamically";
+    color: yellowgreen;
+}
+
+::selection {
+    color: green;
+    background-color: yellowgreen;
+}
+
+input::placeholder {
+    color: goldenrod;
+}
