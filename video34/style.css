@@ -1,0 +1,18 @@
+img {
+    float: left;
+}
+
+.cards {
+    border: 2px solid black;
+    display: flow-root;
+    /*this helps to control overflow: when image is bigge rthan container*/
+}
+
+.card {
+    border: 2px solid red;
+}
+
+.card:nth-child(4) {
+    background-color: aquamarine;
+    clear: both;
+}
