@@ -1,0 +1,25 @@
+.container {
+    border: 2px solid rgb(255, 51, 0);
+    display: grid;
+    width: 80vw;
+    height: 90vh;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    /* grid-template-columns: [pehla] 100px [dusra] 80px;
+            grid-template-rows: 100px 80px 80px; */
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.item {
+    border: 2px solid rgb(9, 25, 255);
+    height: 55px;
+    width: 55px;
+}
+
+/* .item4{
+            grid-column: pehla/dusra;
+            grid-row: 1/2;
+        } */
