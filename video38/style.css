@@ -1,0 +1,53 @@
+.container {
+    border: 2px solid greenyellow;
+    display: flex;
+    height: 80vh;
+    /* justify-content: center; justify item not available */
+    align-items: center;
+    /* used for single line */
+    /* align-content: flex-start; used for multiple lines */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; allows items to wrap onto multiple lines */
+    /* flex-direction: row; */
+    /* default, items are arranged in a row */
+    /* flex-flow: row wrap; same as above */
+    /* gap: 25px; space between items */
+    /* row-gap: 10px;
+            column-gap: 5px; */
+    gap: 10px 5px;
+    /* shorthand for row-gap and column-gap */
+}
+
+.item {
+    background-color: red;
+    height: 40px;
+    width: 90px;
+    /* margin: 5px; */
+    border: 2px solid black;
+    flex-grow: 1;
+    /* allows items to grow and fill available space */
+}
+
+.order-1 {
+    order: 1;
+    flex-shrink: 3;
+    /* this item will shrink more than others(turn off wrap to  see its results) */
+    align-self: flex-end;
+    /* overrides align-items for this item */
+    /* align-self: center; */
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+    align-self: flex-start;
+}
+
+.order-100 {
+    order: 100;
+    flex-grow: 2;
+    /* this item will take more space */
+}
