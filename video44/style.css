@@ -1,0 +1,96 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: beige;
+  }
+
+  .right ul {
+      display: flex;
+      gap: 33px;
+  }
+
+  .right ul li {
+      list-style: none;
+  }
+
+  .download {
+      display: grid;
+      place-items: center;
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
+      gap: 10px;
+      margin: 220px;
+      margin-top: 50px;
+  }
+
+  .item {
+      width: 280px;
+      height: 150px;
+      background-color: rgb(243, 243, 243);
+      display: flex;
+      /* justify-content: center; */
+      /* align-items: center; */
+      flex-direction: column;
+
+      border-radius: 10px;
+      padding: 5px;
+  }
+
+  @media (max-width: 800px) {
+      .download {
+          grid-template-columns: 1fr;
+      }
+  }
+
+  .lang {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: black;
+      display: flex;
+      justify-content: center;
+      height: 30px;
+      padding: 10px;
+
+  }
+
+  .buttong {
+      padding: 10px;
+      background-color: rgb(101, 189, 101);
+      height: 35px;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      margin: 10px;
+      width: 45%;
+      /* display: block; */
+      /* margin-top: 50px; */
+      font-size: .8em;
+  }
+
+  .buttonb {
+      padding: 10px;
+      background-color: rgb(7, 107, 165);
+      height: 35px;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      margin: 10px;
+      width: 45%;
+      /* display: block; */
+      /* margin-top: 50px; */
+      font-size: .8em;
+  }
+
+  .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-top: 50px;
+  }
