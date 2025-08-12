@@ -1,0 +1,54 @@
+.container {
+    background-color: green;
+    width: 60vw;
+    height: 60vh;
+}
+
+.box {
+    width: 12vw;
+    height: 7vh;
+    background-color: greenyellow;
+    /* ani  */
+    /* animation-direction:alternate-reverse; */
+    animation-play-state: paused;
+    animation: boxAnimation 3s ease-in-out 1s 1 forwards,
+        boxAnime 5s ease-in-out 1s infinite;
+}
+
+@keyframes boxAnimation {
+    from {
+        background-color: greenyellow;
+    }
+
+    to {
+        background-color: orange;
+        transform: translate(300px, 0vh);
+    }
+}
+
+@keyframes boxAnime {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    45% {
+        transform: rotate(60deg);
+    }
+
+    90% {
+        transform: rotate(90deg);
+    }
+
+    180% {
+        transform: rotate(120deg);
+    }
+
+    270% {
+        transform: rotate(150deg);
+    }
+
+    360% {
+        transform: rotate(180deg);
+    }
+
+}
