@@ -1,0 +1,28 @@
+  .container {
+      background-color: aquamarine;
+      border: 2px solid rgb(221, 22, 0);
+      width: 400px;
+      height: 400px;
+      background-image: url(image.jpg);
+      background-position: center center;
+  }
+
+  .container2 {
+      background-color: rgb(33, 105, 81);
+      border: 2px solid rgb(5, 3, 3);
+      width: 400px;
+      height: 400px;
+      margin: 20px;
+      background-image: url(lake.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+
+  img {
+      width: 400px;
+      height: 400px;
+      /* object-fit: contain; */
+      object-fit: cover;
+      /* object-fit: fill; */
+      /* object-position: 50px 50px; */
+  }
