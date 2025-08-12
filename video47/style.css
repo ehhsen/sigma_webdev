@@ -1,0 +1,41 @@
+.container {
+    background-color: purple;
+    width: 80vw;
+    height: 80vh;
+
+    position: relative;
+}
+
+
+.ball {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: ballx 10s linear infinite, bally 1s ease-out infinite alternate;
+
+}
+
+@keyframes ballx {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 90%;
+    }
+}
+
+@keyframes bally {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: 80%;
+    }
+}
